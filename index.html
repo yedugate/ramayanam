@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ராமாயணம் • Home</title>
+<meta name="description" content="ராமாயணம் – கाण्डங்கள் (k1–k7) & பாத்திரங்கள் (ராமன், இராவணன், வாலி–சுக்ரீவன், ஹனுமான்) • படிக்க & அச்சிடக் கூடிய பக்கங்கள்" />
+<style>
+  :root{
+    --ink:#141414; --muted:#555; --accent:#0a7; --accent2:#067;
+    --paper:#fff; --rule:#e8e8e8; --soft:#f6fffb;
+  }
+  html,body{margin:0;background:var(--paper);color:var(--ink);font-size:16px;line-height:1.6}
+  body{font-family:"Noto Serif Tamil","Latha","Tamil MN","Arial Unicode MS",Georgia,serif}
+  a{color:inherit}
+  /* Header */
+  header{position:sticky;top:0;background:#fff;border-bottom:1px solid var(--rule);z-index:10}
+  .wrap{max-width:1100px;margin:0 auto;padding:14px 16px}
+  .brand{display:flex;align-items:center;gap:10px}
+  .logo{width:38px;height:38px;border-radius:10px;background:linear-gradient(135deg,#0a7,#0bb);display:inline-block}
+  h1{font-size:1.35rem;margin:0}
+  nav{margin-top:8px;display:flex;gap:10px;flex-wrap:wrap}
+  nav a{border:1px solid var(--rule);padding:6px 10px;border-radius:999px;font-size:.9rem;text-decoration:none;background:#fff}
+  nav a:hover{border-color:var(--accent2);background:#f4fffd}
+  /* Carousel */
+  .hero{max-width:1100px;margin:14px auto 0;padding:0 16px}
+  .carousel{position:relative;overflow:hidden;border-radius:16px;border:1px solid var(--rule)}
+  .slides{display:flex;transition:transform .5s ease}
+  .slide{min-width:100%;height:300px;position:relative;display:flex;align-items:flex-end;color:#fff;text-decoration:none;background:#000}
+  .slide img.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.92}
+  .slide .caption{position:relative;background:linear-gradient(180deg,rgba(0,0,0,0) 0, rgba(0,0,0,.55) 60%, rgba(0,0,0,.75) 100%);
+                  padding:18px 16px;width:100%}
+  .caption h2{margin:.2rem 0 .1rem;font-size:1.4rem}
+  .caption p{margin:.15rem 0 0;color:#dce7ef}
+  .ctl{position:absolute;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.92);border:1px solid var(--rule);
+       width:38px;height:38px;border-radius:50%;display:grid;place-items:center;cursor:pointer}
+  .ctl:hover{background:#fff}
+  .prev{left:10px} .next{right:10px}
+  .dots{position:absolute;left:0;right:0;bottom:10px;display:flex;gap:8px;justify-content:center}
+  .dots button{width:9px;height:9px;border-radius:50%;border:1px solid #fff;background:transparent;opacity:.8;cursor:pointer}
+  .dots button.active{background:#fff;opacity:1}
+  /* Quick Shortcuts */
+  .section{max-width:1100px;margin:18px auto;padding:0 16px}
+  h3{font-size:1.15rem;margin:10px 0}
+  .chips{display:flex;flex-wrap:wrap;gap:8px}
+  .chip{border:1px solid var(--accent2);color:var(--accent2);padding:6px 10px;border-radius:999px;text-decoration:none;font-size:.9rem;background:#fff}
+  .chip:hover{background:#eefaf8}
+  /* Cards */
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+  .card{border:1px solid var(--rule);border-radius:14px;overflow:hidden;background:#fff;text-decoration:none}
+  .thumb{height:120px;background:#f3f6ff}
+  .t-kaandam{background:repeating-linear-gradient(135deg,#e6f7ff 0 12px,#f7fbff 12px 24px)}
+  .t-people{background:repeating-linear-gradient(135deg,#fff7e6 0 12px,#fffdf7 12px 24px)}
+  .card h4{margin:10px 12px 6px}
+  .card p{margin:0 12px 12px;color:var(--muted);font-size:.95rem}
+  .card:hover{box-shadow:0 2px 10px rgba(0,0,0,.06)}
+  /* Footer */
+  footer{border-top:1px solid var(--rule);margin-top:22px}
+  .muted{color:var(--muted);font-size:.92rem}
+  /* Print minimal */
+  @media print{
+    header .wrap nav,.ctl,.dots{display:none!important}
+    .slide{height:180px}
+  }
+</style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="brand">
+        <span class="logo" aria-hidden="true"></span>
+        <div>
+          <h1>ராமாயணம் • முகப்பு</h1>
+          <div class="muted">காண்டங்கள் (k1–k7) & பாத்திரப் பக்கங்கள் – அனைத்தும் ஒரே இடத்தில்</div>
+        </div>
+      </div>
+      <nav aria-label="Quick nav">
+        <a href="k1.html">k1 பாலகாண்டம்</a>
+        <a href="k2.html">k2 அயோத்தியாகாண்டம்</a>
+        <a href="k3.html">k3 அரண்யகாண்டம்</a>
+        <a href="k4.html">k4 கிஷ்கிந்தாகாண்டம்</a>
+        <a href="k5.html">k5 சுந்தரகாண்டம்</a>
+        <a href="k6.html">k6 யுத்தகாண்டம்</a>
+        <a href="k7.html">k7 உத்தரகாண்டம்</a>
+        <a href="rama.html">ராமன்</a>
+        <a href="raavana.html">இராவணன்</a>
+        <a href="vaalisukkreeva.html">வாலி–சுக்ரீவன்</a>
+        <a href="hanuman.html">ஹனுமான்</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO / CAROUSEL -->
+  <main>
+    <div class="hero" aria-label="Banner">
+      <div class="carousel" aria-roledescription="carousel">
+        <div class="slides" id="slides" aria-live="polite">
+          <!-- Slide 1 -->
+          <a class="slide" href="k1.html">
+            <img class="hero-img" src="banner1.png" alt="பாலகாண்டம் – தொடக்கக் காட்சிகள்" />
+            <div class="caption">
+              <h2>காண்டங்கள் ஆரம்பம்: பாலகாண்டம் →</h2>
+              <p>உருவாக்கம், யாகம், குரு–அஸ்திர வித்யை — படிப்பை இங்கிருந்து தொடங்குங்கள்</p>
+            </div>
+          </a>
+          <!-- Slide 2 -->
+          <a class="slide" href="k6.html">
+            <img class="hero-img" src="banner2.png" alt="யுத்தகாண்டம் – ராமசேது & யுத்தம்" />
+            <div class="caption">
+              <h2>யுத்தகாண்டம் – இறுதிப் போரின் சுருக்கம்</h2>
+              <p>ராமசேது, இந்திரஜித், கும்பகர்ணன், ராவணன் வதம் — தேர்வு ரெடி</p>
+            </div>
+          </a>
+          <!-- Slide 3 -->
+          <a class="slide" href="hanuman.html">
+            <img class="hero-img" src="banner3.png" alt="ஹனுமான் – தூது & வீரியம்" />
+            <div class="caption">
+              <h2>ஹனுமான்: தூது, தீர்மானம், தியாகம்</h2>
+              <p>சுந்தரகாண்டத்தின் இதயம் — ஒரு பக்கத்தில் எல்லாம்</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Controls -->
+        <button class="ctl prev" aria-label="முந்தைய ஸ்லைடு" id="prev" title="Prev">‹</button>
+        <button class="ctl next" aria-label="அடுத்த ஸ்லைடு" id="next" title="Next">›</button>
+
+        <!-- Dots -->
+        <div class="dots" role="tablist" aria-label="Slides">
+          <button aria-label="Slide 1" data-dot="0" class="active"></button>
+          <button aria-label="Slide 2" data-dot="1"></button>
+          <button aria-label="Slide 3" data-dot="2"></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- QUICK SHORTCUTS -->
+    <section class="section" aria-labelledby="quick">
+      <h3 id="quick">துரிதச் சுட்டிகள்</h3>
+      <div class="chips">
+        <a class="chip" href="k1.html">k1 பாலகாண்டம்</a>
+        <a class="chip" href="k2.html">k2 அயோத்தியாகாண்டம்</a>
+        <a class="chip" href="k3.html">k3 அரண்யகாண்டம்</a>
+        <a class="chip" href="k4.html">k4 கிஷ்கிந்தா</a>
+        <a class="chip" href="k5.html">k5 சுந்தர</a>
+        <a class="chip" href="k6.html">k6 யுத்த</a>
+        <a class="chip" href="k7.html">k7 உத்தர</a>
+        <a class="chip" href="rama.html">ராமன்</a>
+        <a class="chip" href="raavana.html">இராவணன்</a>
+        <a class="chip" href="vaalisukkreeva.html">வாலி–சுக்ரீவன்</a>
+        <a class="chip" href="hanuman.html">ஹனுமான்</a>
+      </div>
+    </section>
+
+    <!-- CARDS -->
+    <section class="section" aria-labelledby="kaandam">
+      <h3 id="kaandam">காண்டம் பக்கங்கள்</h3>
+      <div class="grid">
+        <a class="card" href="k1.html">
+          <div class="thumb t-kaandam"></div>
+          <h4>k1 • பாலகாண்டம்</h4>
+          <p>முன்னுரை, யாகம், ஸ்வயம்வரம் வரை.</p>
+        </a>
+        <a class="card" href="k2.html">
+          <div class="thumb t-kaandam"></div>
+          <h4>k2 • அயோத்தியாகாண்டம்</h4>
+          <p>அபிஷேகம் → வனவாசம் → சித்ரகூடம்.</p>
+        </a>
+        <a class="card" href="k3.html">
+          <div class="thumb t-kaandam"></div>
+          <h4>k3 • அரண்யகாண்டம்</h4>
+          <p>சூர்ப்பணகை, தங்கமான், அபகரிப்பு.</p>
+        </a>
+        <a class="card" href="k4.html">
+          <div class="thumb t-kaandam"></div>
+          <h4>k4 • கிஷ்கிந்தாகாண்டம்</h4>
+          <p>சுக்ரீவன், வாலி வதம், தேடல் அணிகள்.</p>
+        </a>
+        <a class="card" href="k5.html">
+          <div class="thumb t-kaandam"></div>
+          <h4>k5 • சுந்தரகாண்டம்</h4>
+          <p>ஹனுமானின் பாய்ச்சி, சூடாமணி, செய்தி.</p>
+        </a>
+        <a class="card" href="k6.html">
+          <div class="thumb t-kaandam"></div>
+          <h4>k6 • யுத்தகாண்டம்</h4>
+          <p>சேது, இந்திரஜித், கும்பகர்ணன், ராவணன்.</p>
+        </a>
+        <a class="card" href="k7.html">
+          <div class="thumb t-kaandam"></div>
+          <h4>k7 • உத்தரகாண்டம்</h4>
+          <p>லவ–குசன், அஶ்வமேதம், பூதேவி சாட்சி.</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="chars">
+      <h3 id="chars">பாத்திரப் பக்கங்கள்</h3>
+      <div class="grid">
+        <a class="card" href="rama.html">
+          <div class="thumb t-people"></div>
+          <h4>ராமன்</h4>
+          <p>விஷ்ணு அவதாரம், தர்ம நாயகன், ஸ்வயம்வரம்.</p>
+        </a>
+        <a class="card" href="raavana.html">
+          <div class="thumb t-people"></div>
+          <h4>இராவணன்</h4>
+          <p>வம்சம், வரங்கள், “தசமுகன்” விளக்கம்.</p>
+        </a>
+        <a class="card" href="vaalisukkreeva.html">
+          <div class="thumb t-people"></div>
+          <h4>வாலி–சுக்ரீவன்</h4>
+          <p>முன்கதை, ரிஷ்யமூகம், தர்மக் கோணம்.</p>
+        </a>
+        <a class="card" href="hanuman.html">
+          <div class="thumb t-people"></div>
+          <h4>ஹனுமான்</h4>
+          <p>தூது, வால் தீ, ராமபக்தி – சுருக்கம்.</p>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap muted">
+      © ராமாயணம் கல்விக் குறிப்புகள் • A4 அச்சு நட்பு • அனைத்து துணை பக்கங்கள்: k1–k7, rama, raavana, vaalisukkreeva, hanuman
+    </div>
+  </footer>
+
+  <script>
+    (function(){
+      const slides = document.getElementById('slides');
+      const dots = Array.from(document.querySelectorAll('.dots button'));
+      const prev = document.getElementById('prev');
+      const next = document.getElementById('next');
+      let index = 0, N = dots.length, timer = null, hovering = false;
+
+      function go(i){
+        index = (i+N)%N;
+        slides.style.transform = `translateX(${-100*index}%)`;
+        dots.forEach((d,j)=>d.classList.toggle('active', j===index));
+      }
+      function auto(){
+        clearInterval(timer);
+        timer = setInterval(()=>{ if(!hovering){ go(index+1); } }, 5000);
+      }
+      dots.forEach((d,i)=>d.addEventListener('click', ()=>{ go(i); auto(); }));
+      prev.addEventListener('click', ()=>{ go(index-1); auto(); });
+      next.addEventListener('click', ()=>{ go(index+1); auto(); });
+
+      slides.addEventListener('mouseenter', ()=>hovering=true);
+      slides.addEventListener('mouseleave', ()=>hovering=false);
+
+      // keyboard
+      document.addEventListener('keydown', (e)=>{
+        if(e.key==='ArrowLeft') { go(index-1); auto(); }
+        if(e.key==='ArrowRight'){ go(index+1); auto(); }
+      });
+
+      go(0); auto();
+    })();
+  </script>
+</body>
+</html>
